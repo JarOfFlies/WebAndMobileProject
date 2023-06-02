@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Search</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link href="/css/styles.css" rel="stylesheet">
+<!--
+    
+TemplateMo 556 Catalog-Z
+
+https://templatemo.com/tm-556-catalog-z
+
+-->
+</head>
+<body>
+    <!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-film mr-2"></i>
+                Card Search Engine
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/hero.jpg">
+        <form class="d-flex tm-search-form" action="/search">
+            <input class="form-control tm-search-input" type="search" name="value" placeholder="Search" aria-label="Search" style="margin-right: 10px">
+            <button class="btn btn-outline-success tm-search-btn" type="submit">
+                <i class="fas fa-search">Search</i>
+            </button>
+        </form>
+    </div>
+
+    <div style="text-align: center;">
+        <p>Search Syntax: </p>
+        <p>Using one of the below syntax before search term will allow you to search specific card attributes.</p>
+        <p>For example: 'colour:w' will search for white cards.</p>
+        <p>No search parameter will return all cards and searching without syntax will search via card name.</p>
+
+        <p>type:</p>
+        <p>colour:</p>
+        <p>keyword:</p>
+        <p>set:</p>
+        <p>power:</p>
+        <p>cmc:</p>
+        <br>
+        <p>Example Searches</p>
+        <a href="/search?value=colour:w"><p style="color: red;">Cards that are white</p></a>
+        <a href="/search?value=type:creature"><p style="color: red;">Cards that are creatures</p></a>
+        <a href="/search?value=set:rna"><p style="color: red;">Cards from the set "Ravnica Allegiance"</p></a>
+    </div>
+    
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>
