@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="theme-color" content="B12A34">
+        <meta property="og:image" content="icons/icon-256.png">
+        <title>Card Search</title>
+        <meta name="author" content="jw">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="manifest" href="cards.webmanifest">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="resources/material-design-lite/material.red-indigo.min.css">
+        <script src="resources/material-design-lite/material.min.js"></script>
+        <script src="data/cards.js"></script>
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <h1>Card Search Engine</h1>
+
+        <div class="container">
+            <div class="row">
+                    <section id="content">
+                        // Content inserted in here
+                    </section>
+            </div>
+        </div>
+
+            <dialog class="mdl-dialog">
+                <h4 class="mdl-dialog__title">NAME</h4>
+                <div class="mdl-dialog__content">
+                    <p>
+                        card details shown here.
+                    </p>
+                </div>
+                <div class="mdl-dialog__actions">
+                    <button type="button" class="mdl-button close" onclick="document.querySelector('dialog').close();">Close</button>
+                </div>
+            </dialog>
+        </main>
+    </body>
+</html>
